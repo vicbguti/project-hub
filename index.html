@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hub | Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="fade-in">Project<span>Hub</span></h1>
+            <p class="subtitle fade-in">Selecciona una solución para comenzar</p>
+        </header>
+
+        <section class="launcher-grid">
+            <div class="project-card fade-in">
+                <div class="card-content">
+                    <div class="icon">📅</div>
+                    <h2>Academic Planner</h2>
+                    <p>Optimización inteligente de horarios académicos y gestión de registros.</p>
+                    <a href="https://vicbguti.github.io/academic-planner-landing/" class="btn-launch">Explorar
+                        Proyecto</a>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="card-content">
+                    <div class="icon">❄️</div>
+                    <h2>Rukito IoT</h2>
+                    <p>Monitoreo predictivo y reactivo de la cadena de frío industrial.</p>
+                    <a href="https://vicbguti.github.io/rukito-project/" class="btn-launch">Explorar Proyecto</a>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+        </section>
+
+        <footer class="fade-in">
+            <p>&copy; 2026 Digital Solutions. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+
+</html>
