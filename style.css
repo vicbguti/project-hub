@@ -17,11 +17,12 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    overflow: hidden;
-    height: 100vh;
+    overflow-y: auto;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem 0;
 }
 
 .background-blobs {
